@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Primera Lección" content="Login de Usuario">
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/css/login.css">
+    <script src="assets/js/validaciones.js"></script>
+</head>
+<body>
+<div class="login">
+    <p>
+        <span>Usuario:</span>
+        <input type="text" id="usuario" placeholder="Ejm: ByronMendoza"  required>
+    </p>
+    <p>
+        <span>Contraseña:</span>
+        <input type="password" id="contraseña" placeholder="Ejm: *********"  required>
+    </p>
+
+    <input type="button" id="enviar" value="Validar" onkeypress="return ValidarLogin(event)">
+</div>
+</body>
+</html>

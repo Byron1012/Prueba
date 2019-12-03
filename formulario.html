@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Descripción" content="Formularios " />
+    <title>FORMULARIOS</title>
+    <script src="assets/js/FormularioJS.js"></script>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>FORMULARIO</h1>
+            <h2>LLenar Formulario</h2>
+        </header>
+        <form action="Taller01.html" class="form1" method="post" onsubmit="return Validar();">
+            <section id="infpersonal">
+                <div id="infbasica">
+                    <p><strong><span class="ST">Datos Personales</span></strong></p><br>
+                    <p>
+                        <span class="tipo1">Cedula:</span>
+                        <input type="text" id="cedula" class="personal" name="cedula" placeholder="Ejm: 0123456789" maxlength="10" minlength="10" onpaste="return false" onkeypress="return SoloNumero(event)" required>
+                    </p>
+                    <p>
+                        <span class="tipo1">Nombres:</span>
+                        <input type="text" id="nombre" class="personal" name="nombre" placeholder="Ejm: Byron" maxlength="30" minlength="2" onpaste="return false" onkeypress="return sololetras(event)" required>
+                    </p>
+                    <p>
+                        <span class="tipo1">Apellidos:</span>
+                        <input type="text" id="apellido" class="personal" name="apellido" placeholder="Ejm: Mendoza" maxlength="30" minlength="2" onpaste="return false" onkeypress="return sololetras(event)" required>
+                    </p>
+                    <p>
+                        <span class="tipo1">Edad:</span>
+                        <input type="text" id="edad" class="personal" name="edad" placeholder="Maor a 18" min="18" maxlength="2" onpaste="return false" onkeypress="return SoloNumero(event)" required>
+                    </p>
+                    <p>
+                        <span class="tipo1">Fecha de nacimiento:</span>
+                        <input type="date" class="personal" name="fnacimiento" min="01/01/1980" max="01/01/2001" required>
+                    </p>
+                    <p>
+                        <span class="tipo1">Correo:</span>
+                        <input type="text" id="correo" class="personal" name="correo" placeholder="ejemplo@example.com" min="18" max="60" required>
+                    </p>
+                </div>
+            </section>
+            <input type="submit" value="Subir Fomulario" class="btsubmit">
+        </form>
+        <footer>
+
+        </footer>
+    </main>
+</body>
+</html>
